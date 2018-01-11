@@ -1,0 +1,84 @@
+// resume page current job section:
+
+.current-job {
+  width: 100%;
+  max-width: 544px;
+  margin: 0 auto 60px;
+  padding: 50px 15px 0;
+
+  @media ($laptop) {
+    max-width: 1087px; // matches .jobs, allows bottom border to extend
+    padding: 50px 190px 60px; // keep text in narrower column
+    margin-bottom: 0;
+    text-align: center;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  .headnote {
+    @include headnoteStyles; // see mixins
+    margin-bottom: 10px;
+
+    @media ($laptop) {
+      font-size: 15px;
+      padding-left: 20px; // balance left-right
+      margin: 0 auto 10px;
+    }
+  } // headnote
+
+  .job-employer {
+    @media ($laptop) {
+      margin-bottom: 20px;
+    }
+  } // job-employer
+
+  .job-specs,
+  .job-summary {
+    float: none; // undo default from .job
+    width: 100%; // undo default from .job
+  }
+
+  .job-specs {
+    margin: 10px auto;
+
+    @media ($laptop) {
+      margin-bottom: 20px;
+    }
+
+    p {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  } // job-specs
+
+  .job-dates {
+    margin-top: 0; // undo default from .job
+  }
+
+  .job-summary {
+    @media ($laptop) {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 700px;
+    }
+  } // job-summary
+
+  ul {
+    border-top: none; // undo default from .job
+  }
+
+  li:nth-last-of-type(1) {
+    border-bottom: none; // undo default from .job
+  }
+} // current-job
+
+.current-job-icon {
+  position: relative;
+  left: -15px; // line up graphic with text
+  display: block;
+  margin-bottom: 10px;
+
+  @media ($laptop) {
+    left: 0; // undo shift
+    margin: 0 auto 10px;
+  }
+} // current-job-icon

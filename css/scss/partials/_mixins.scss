@@ -1,0 +1,20 @@
+@mixin rgbaFallback($prop, $color, $opacity, $fallbackColor: $color) {
+  #{$prop}: $fallbackColor;
+  #{$prop}: rgba($color, $opacity);
+}
+
+@mixin headnoteStyles() {
+  display: inline-block;
+  padding: 0 20px 10px 2px; // intentionally off-center
+  border-bottom: 1px solid $lightBorderColor;
+  font: 12px/1 $work;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@mixin sectionHeadingStyles() {
+  font: 20px/1 $work;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2em;
+}
