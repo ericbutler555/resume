@@ -32,6 +32,7 @@ jQuery(document).ready(function($){
         $('.contact-info p:nth-of-type(1)').addClass('pulsing');
         setTimeout(function(){ $('.contact-info p:nth-of-type(2)').addClass('pulsing'); }, 150);
         setTimeout(function(){ $('.contact-info p:nth-of-type(3)').addClass('pulsing'); }, 300);
+        setTimeout(function(){ $('.contact-info p:nth-of-type(4)').addClass('pulsing'); }, 450);
         setTimeout(function(){ $('.contact-info p').removeClass('pulsing'); }, 1000);
       } // end callback function
     ); // end animate
