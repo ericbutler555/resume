@@ -1,0 +1,14 @@
+{
+	"short_name": "Eric Butler",
+	"name": "Eric Butler",
+	"icons": [
+		{
+			"src": "/img/site-icons/android-chrome-192x192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		}
+	],
+	"theme_color": "#0c3663",
+	"background_color": "#0c3663",
+	"display": "standalone"
+}

@@ -1,5 +1,12 @@
 jQuery(document).ready(function($){
 
+  // lazy-load in the background images:
+  $('.js-lazyload-bg').each(function(){
+    var datasrc = $(this).data('bg-image');
+    $(this).css('backgroundImage', 'url(img/' + datasrc + ')');
+  });
+
+
   // create a parallax effect on the "about me" section's bg:
   $(window).on('scroll', function () {
     var scrollAmt = $(window).scrollTop() * 0.3;
