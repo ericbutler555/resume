@@ -20,6 +20,35 @@
   h2 {
     font-size: 22px;
   }
+
+  .intro {
+
+    br {
+      @media ($iphone6) {
+        display: none;
+      }
+    }
+
+    a {
+      position: relative;
+      display: inline-block;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: rgba(white, 0.8);
+        transition: width 0.2s;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+    }
+  }
 } // about-content
 
 .contact-info {
@@ -72,12 +101,13 @@
 } // contact-info
 
 p.speech {
+  @include rgbaFallback(background, white, 0.3, $ashBlue);
   position: relative; // contain abs-pos :after element
   display: inline-block;
   padding: 5px 15px;
   margin-bottom: 20px;
   border-radius: 20px;
-  @include rgbaFallback(background, white, 0.3, $ashBlue);
+  transition: all 0.4s;
 
   &:after {
     content: " ";
@@ -92,6 +122,11 @@ p.speech {
     border-right: 7px solid transparent;
     border-top: 10px solid $ashBlue; // fallback color
     border-top: 10px solid rgba(white, 0.3);
+  }
+
+  &.unspoken {
+    transform-origin: center bottom;
+    transform: scale(0) translateY(-50px) rotate(45deg);
   }
 } // p.speech
 

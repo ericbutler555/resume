@@ -10,10 +10,12 @@
 } // skills
 
 .skills-items {
+  list-style: none;
   max-width: 850px;
   margin: 0 auto;
+  padding: 0;
 
-  p {
+  li {
     display: inline-block;
     padding: 15px;
     font-size: 14px;

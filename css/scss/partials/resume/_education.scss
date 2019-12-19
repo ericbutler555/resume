@@ -40,6 +40,10 @@
   padding: 30px 15px;
   text-align: center;
 
+  @media ($iphone6) {
+    text-align: left;
+  }
+
   @media ($laptop) {
     float: left;
     padding: 40px 15px;
@@ -56,6 +60,21 @@
     }
   } // media
 } // school
+
+.school-icon {
+  width: 60px;
+  height: 60px;
+
+  @media ($iphone6) {
+    float: left;
+    margin: 0 30px 20px 0;
+  }
+
+  @media ($laptop) {
+    float: none;
+    margin: 0;
+  }
+}
 
 .school-name {
   font: 24px/1.2 $trocchi;
@@ -77,5 +96,13 @@
     font-size: 13px;
     line-height: 1.2;
     color: $altTextColor;
+
+    @media ($iphone6) {
+      padding: 0 15px 0 0;
+    }
+
+    @media ($laptop) {
+      padding: 0 10px;
+    }
   }
 } // school-stats
