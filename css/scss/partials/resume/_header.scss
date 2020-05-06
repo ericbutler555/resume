@@ -2,6 +2,8 @@
 
 .about-me {
   background: $deepBlue no-repeat 20% top;
+  background-attachment: local; // fallback for browsers that don't support fixed
+  background-attachment: fixed;
   background-size: cover;
 }
 
