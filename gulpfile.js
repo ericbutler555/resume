@@ -8,22 +8,24 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     del = require('del');
 
+const { parallel } = require('gulp');
+
 // compile scss and run autoprefixer:
 
-gulp.task('prepCSS', function(){
+function prepCSS() {
   del('all.min.css*');
   return gulp.src('css/scss/all.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-    .pipe(autoprefixer({ browsers: ['last 3 versions', '>1%'] }))
+    .pipe(autoprefixer())
     .pipe(rename('all.min.css'))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('css/'));
-});
+}
 
 // minify javascript:
 
-gulp.task('prepJS', function(){
+function prepJS() {
   del('all.min.js*');
   return gulp.src('js/partials/all.js')
     .pipe(sourcemaps.init())
@@ -31,13 +33,16 @@ gulp.task('prepJS', function(){
     .pipe(rename('all.min.js'))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('js/'));
-});
+}
 
-gulp.task('watchFiles', function(){
+// watch for changes:
+
+function watchFiles() {
   gulp.watch('css/scss/**/*.scss', ['prepCSS']);
   gulp.watch('js/partials/**/*.js', ['prepJS']);
-});
+}
 
-gulp.task('default', ['watchFiles']);
+// cli calls:
 
-gulp.task('build', ['prepCSS', 'prepJS']);
+exports.default = watchFiles;
+exports.build = parallel(prepCSS, prepJS);

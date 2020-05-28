@@ -35,6 +35,12 @@
   img {
     max-width: 100%;
     border: 1px solid $borderColor;
+    transition: all 0.3s;
+  }
+
+  & > img:hover {
+    filter: grayscale(0.5) blur(2px);
+    cursor: not-allowed;
   }
 
   a {
@@ -44,7 +50,6 @@
       @media ($tablet) {
         transform: scale(1);
         box-shadow: 0 4px 10px transparent;
-        transition: all 0.3s;
 
         &:hover,
         &:focus {
