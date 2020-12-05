@@ -2,14 +2,16 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title>Eric Butler, Web Developer</title>
+  <title>Eric Butler, Front-End Web Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="IE=edge">
   <meta name="HandheldFriendly" content="True">
 
   <meta name="robots" content="index,follow">
   <meta name="author" content="Eric Butler">
-  <meta name="description" content="Clean, mobile-first websites to fit your company's digital marketing strategy.">
+  <meta name="description" content="Front-end web developer building responsive, mobile-friendly marketing websites since 2011. Passion for building sturdy, easy to maintain, high-performance websites from hobby to enterprise.">
+
+  <link rel="canonical" href="https://ericbutler555.github.io/resume/">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84532213-1"></script>
   <script>
@@ -22,19 +24,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trocchi|Work+Sans:300&display=swap">
   <link rel="stylesheet" href="css/all.min.css">
 
-  <link rel="canonical" href="https://ericbutler555.github.io/resume/">
+  <script defer src="js/all.js"></script>
 
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Eric Butler, Web Developer">
-  <meta property="og:description" content="Clean, mobile-first websites to fit your company's digital marketing strategy.">
   <meta property="og:image" content="https://ericbutler555.github.io/resume/img/EricButler-Resume.png">
   <meta property="og:site_name" content="Eric Butler">
   <meta property="og:url" content="https://ericbutler555.github.io/resume/">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Eric Butler, Web Developer">
-  <meta name="twitter:description" content="Clean, mobile-first websites to fit your company's digital marketing strategy.">
   <meta name="twitter:image" content="https://ericbutler555.github.io/resume/img/EricButler-Resume.png">
   <meta name="twitter:url" content="https://ericbutler555.github.io/resume/">
 
@@ -63,19 +61,19 @@
     <div class="about-content">
       <p class="speech unspoken">Hello, I&rsquo;m</p>
       <h1>Eric Butler</h1>
-      <h2>Website Developer</h2>
+      <h2>Front-End Website Developer</h2>
       <p class="intro">
         Check out my <a href="#work">work samples</a>, <a href="#current-job">job history</a>,<br>
         <a href="#education">education</a> and <a href="#skills">technical skills</a> below.
       </p>
-      <address class="contact-info cf">
-        <p><a href="mailto:ericbutler555@gmail.com?subject=I%20saw%20your%20website" target="_blank" rel="noopener"><i class="fa fa-envelope-o" aria-hidden="true"></i> ericbutler555<br>@gmail.com</a></p>
-        <p><a href="https://goo.gl/maps/5BjhKaPbmcu" target="_blank" rel="noopener"><i class="fa fa-map-o" aria-hidden="true"></i> Louisville Ky<br> USA</a></p>
-        <p><a href="https://github.com/ericbutler555" target="_blank" rel="noopener"><i class="fa fa-github" aria-hidden="true"></i> GitHub<br> Profile</a></p>
-        <p><a href="https://codepen.io/ericbutler555/pens/public/" target="_blank" rel="noopener"><i class="fa fa-codepen" aria-hidden="true"></i> CodePen<br> Pens</a></p>
-      </address>
+      <ul class="contact-info cf">
+        <li><a href="mailto:ericbutler555@gmail.com?subject=I%20saw%20your%20website" target="_blank" rel="noopener"><img src="img/icons/envelope.svg" alt="Email" width="30"> ericbutler555<br>@gmail.com</a></li>
+        <li><a href="https://goo.gl/maps/5BjhKaPbmcu" target="_blank" rel="noopener"><img src="img/icons/compass.svg" alt="Location" width="30"> Louisville Ky<br> USA</a></li>
+        <li><a href="https://github.com/ericbutler555" target="_blank" rel="noopener"><img src="img/icons/github.svg" alt="Github" width="26"> GitHub<br> Profile</a></li>
+        <li><a href="https://codepen.io/ericbutler555/pens/public/" target="_blank" rel="noopener"><img src="img/icons/codepen.svg" alt="CodePen" width="26"> CodePen<br> Pens</a></li>
+      </ul>
       <p class="scroll-down">
-        <a href="#work" title="See some work"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+        <a href="#work" title="See some work"><img src="img/icons/chevron-down.svg" alt="Scroll down" width="30"></a>
       </p>
     </div>
   </header>
@@ -86,14 +84,14 @@
     <div class="sites cf">
 
       <div class="site">
-        <img src="img/screenshots/insights2.jpg" alt="Screenshot of 2020 Insights Conference microsite">
-        <h4>Insights Conference Microsite</h4>
-        <p>2019 - Kentico CMS, HTML, SCSS, JS</p>
-      </div>
-
-      <div class="site">
         <a href="https://rural1st.com/" target="_blank" rel="noopener"><img src="img/screenshots/rural1st.jpg" alt="Screenshot of rural1st.com"></a>
         <h4>Rural 1st</h4>
+        <p>2020 - Kentico CMS, HTML, SCSS, JS</p>
+      </div>
+
+      <div class="site inactive">
+        <img src="img/screenshots/insights.jpg" alt="Screenshot of 2020 Insights Conference microsite">
+        <h4>Insights Conference Microsite</h4>
         <p>2019 - Kentico CMS, HTML, SCSS, JS</p>
       </div>
 
@@ -121,14 +119,14 @@
         <p>2017 - WordPress, PHP, HTML, CSS, JS</p>
       </div>
 
-      <div class="site">
+      <div class="site inactive">
         <img src="img/screenshots/canadianmist.jpg" alt="Screenshot of canadianmist.com">
         <h4>Canadian Mist</h4>
         <p>2016 - WordPress, PHP, HTML, CSS, JS</p>
       </div>
 
-      <div class="site">
-        <img src="img/screenshots/nortonchildrens2.jpg" alt="Screenshot of nortonchildrens.com">
+      <div class="site inactive">
+        <img src="img/screenshots/nortonchildrens.jpg" alt="Screenshot of nortonchildrens.com">
         <h4>Norton Children&rsquo;s</h4>
         <p>2016 - Design, WordPress, PHP, HTML, CSS, JS</p>
       </div>
@@ -156,11 +154,11 @@
     </div>
     <div class="job-summary">
       <ul>
-        <li>Lead developer and maintainer of the company&rsquo;s public websites, which received over half a million unique visitors in 2019.</li>
-        <li>Develop landing pages and lead-generation forms to attract new customers.</li>
-        <li>Assist with front-end styling and asset creation for the company's online banking platform.</li>
-        <li>Add new features and fix bugs on a legacy C# .NET + AngularJS web application used daily by employees across the company.</li>
-        <li>Analyze and report on website audience and engagement analytics to shape decisions.</li>
+        <li>Lead developer and maintainer of the company's customer-facing websites, which receive half a million unique visitors per year. Websites are IE11 compatible and use Kentico CMS, Sass and Gulp.</li>
+        <li>Work closely with the Marketing Dept and brand teams to create landing pages and lead-generation forms to attract new customers.</li>
+        <li>Coordinate with 3rd-party design agencies and vendors on partnerships and integrations.</li>
+        <li>Set up tracking events in Google Tag Manager to capture audience and engagement analytics that help shape business decisions.</li>
+        <li>Help code feature requests and bug fixes for internal web apps using C# ASP.NET and Angular, as needed.</li>
       </ul>
     </div>
   </section>
@@ -179,18 +177,20 @@
         <h4 class="job-employer">PriceWeber</h4>
         <div class="job-summary">
           <ul>
-            <li>Built websites for national consumer brands.</li>
-            <li>Heavy, daily use of HTML5, CSS, Sass (SCSS), jQuery, JavaScript, Gulp and Git.</li>
-            <li>Developed custom WordPress themes from scratch.</li>
-            <li>Designed site wireframes using Adobe XD. Led wireframe presentations to clients.</li>
-            <li>Picked apart designer PSD and XD files for assets and styles, set up SVGs, webfonts and media queries, optimized images and minified files for the web, etc.</li>
-            <li>Heavy emphasis on coding standards and best practices, focused on improving performance and usability across all devices and browsers.</li>
+            <li>Start-to-finish website development for national brands in CPG (consumer packaged goods), healthcare, manufacturing, nonprofit and other business sectors.</li>
+            <li>Daily use of HTML5, Sass (SCSS), Gulp, jQuery, JavaScript, and WordPress custom theme development. Emphasis on responsive, mobile-first code and compatibility across browsers and devices.</li>
+            <li>Presented concepts and deliverables to high-value clients, and iterated based on their feedback.</li>
+            <li>Led in-person client training sessions and wrote documentation guides for clients.</li>
+            <li>Created wireframes using Adobe XD to prototype, plan content structure and work through UI challenges.</li>
+            <li>Built offline web apps for interactive kiosks and live presentations at trade shows.</li>
+            <li>Coded animated HTML5 display ads for digital campaigns with Greensock and Velocity.js.</li>
+            <li>Picked apart designer PSD comps for image assets and styles, optimized assets for the web, etc.</li>
           </ul>
         </div>
       </div>
       <div class="job-specs cf">
         <img class="job-icon" src="img/logos/PriceWeber-Logo.png" alt="PriceWeber">
-        <p class="job-dates">March 2015<br> &ndash; September 2018</p>
+        <p class="job-dates">March 2015 &ndash; <br>September 2018</p>
         <p class="job-location">Louisville, KY</p>
         <p class="job-industry">
           Advertising,<br>
@@ -206,15 +206,16 @@
         <h4 class="job-employer">State of Hawaii Department of Labor &amp; Industrial Relations</h4>
         <div class="job-summary">
           <ul>
-            <li>Using PHP, MySQL, HTML/CSS/jQuery, WordPress, and Adobe ColdFusion (as needed), designed and coded various websites and intranet tools from concept to launch, and did code/scripting maintenance for the websites of several government divisions and the Dept. of Labor in general.</li>
-            <li>Served as webmaster for the Dept. of Labor&rsquo;s WordPress-powered website.</li>
-            <li>Graphic design and layout for the Department&rsquo;s annual reports, newsletters, and other print/PDF materials, using Adobe InDesign, Photoshop, and Illustrator.</li>
+            <li>Designed, built, and maintained several database-driven web apps, websites and intranet tools for the Workforce Development Council, the Unemployment Insurance Division, and the Department of Labor, using Adobe ColdFusion, PHP, MySQL, and jQuery.</li>
+            <li>Served as webmaster for the Department of Labor's WordPress-powered website: posting content, maintaining pages, and assisting divisions with their sub-sites.</li>
+            <li>Built a student/employer web portal for University of Hawaii Community College's C3T Program.</li>
+            <li>Also did graphic design and layout for the Department's annual reports, newsletters, and other print/PDF materials, using Adobe InDesign, Photoshop, and Illustrator.</li>
           </ul>
         </div>
       </div>
       <div class="job-specs cf">
         <img class="job-icon" src="img/logos/StateOfHawaii-Logo.png" alt="State of Hawaii">
-        <p class="job-dates">March 2011 &ndash; <br>July 2014</p>
+        <p class="job-dates">April 2011<br> &ndash; July 2014</p>
         <p class="job-location">Honolulu, HI</p>
         <p class="job-industry">
           Government,<br>
@@ -230,15 +231,14 @@
         <h4 class="job-employer">Harpercollins Publishers</h4>
         <div class="job-summary">
           <ul>
-            <li>Designed interior book layouts for over 75 nationally-published books.</li>
-            <li>Prioritized overlapping projects at different stages of production under hard-set deadlines.</li>
-            <li>Managed freelance artists and designers as needed.</li>
+            <li>Designed book interiors for over 75 national fiction, history, business, memoir and special interest titles.</li>
+            <li>Prioritized overlapping projects at different stages of production under hard­-set deadlines.</li>
           </ul>
         </div>
       </div>
       <div class="job-specs cf">
         <img class="job-icon" src="img/logos/HarperCollins-Logo.png" alt="HarperCollins Publishers">
-        <p class="job-dates">July 2008<br> &ndash; July 2010</p>
+        <p class="job-dates">July 2008 &ndash; <br>July 2010</p>
         <p class="job-location">New York, NY</p>
         <p class="job-industry">
           Book Publishing,<br>
@@ -254,15 +254,14 @@
         <h4 class="job-employer">Butler Books</h4>
         <div class="job-summary">
           <ul>
-            <li>Designed dozens of books, covers, annual sales catalogs, and online graphics for the company.</li>
-            <li>Assisted in many aspects of the production process: cover and interior page design, copy editing, promotional copy writing, sales representative at events, etc.</li>
-            <li>Managed product listings and other content for the company&rsquo;s e-commerce website.</li>
+            <li>Designed dozens of books, covers, and the company's annual sales catalogs.</li>
+            <li>Managed the company’s e-commerce website.</li>
           </ul>
         </div>
       </div>
       <div class="job-specs cf">
         <img class="job-icon" src="img/logos/ButlerBooks-Logo.png" alt="Butler Books">
-        <p class="job-dates">December 2006 &ndash; <br>March 2015</p>
+        <p class="job-dates">December 2005<br> &ndash; June 2008</p>
         <p class="job-location">Louisville, KY</p>
         <p class="job-industry">
           Book Publishing,<br>
@@ -271,28 +270,6 @@
       </div>
     </div>
 
-
-    <div class="job cf">
-      <div class="job-details cf">
-        <h3 class="job-title">Photography Assistant</h3>
-        <h4 class="job-employer">Zappos.com</h4>
-        <div class="job-summary">
-          <ul>
-            <li>Worked with photographers to prepare a variety of products, shoes, and clothing for studio photography to be featured on the company&rsquo;s retail website.</li>
-            <li>Recorded various metadata about the products (dimensions, materials, color, care instructions, etc.) into a central database to inform customers about the products.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="job-specs cf">
-        <img class="job-icon" src="img/logos/Zappos-Logo.png" alt="Zappos.com">
-        <p class="job-dates">October 2006<br> &ndash; April 2007</p>
-        <p class="job-location">Louisville, KY</p>
-        <p class="job-industry">
-          Online Retail,<br>
-          Studio Photography
-        </p>
-      </div>
-    </div>
 
   </section>
 
@@ -356,32 +333,27 @@
   <section id="skills" class="skills">
     <h2>Skills &amp; Technologies</h2>
     <ul class="skills-items">
-      <li>Responsive design</li>
-      <li>Advanced CSS</li>
-      <li><a href="http://sass-lang.com/" target="_blank" rel="noopener">Sass</a></li>
-      <li><a href="http://lesscss.org/" target="_blank" rel="noopener">Less</a></li>
-      <li><a href="https://gulpjs.com/" target="_blank" rel="noopener">Gulp.js</a></li>
-      <li>JavaScript ES6</li>
-      <li><a href="https://vuejs.org/">Vue.js</a></li>
+      <li>Semantic HTML</li>
+      <li>Responsive web design</li>
+      <li>CSS, <a href="http://sass-lang.com/" target="_blank" rel="noopener">Sass</a> &amp; <a href="http://lesscss.org/" target="_blank" rel="noopener">Less</a></li>
+      <li><a href="https://gulpjs.com/" target="_blank" rel="noopener">Gulp</a></li>
+      <li>JavaScript &amp; ES6</li>
       <li><a href="https://angular.io/" target="_blank" rel="noopener">Angular</a></li>
       <li><a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a></li>
       <li><a href="https://greensock.com/" target="_blank" rel="noopener">Greensock (GSAP)</a></li>
       <li><a href="http://velocityjs.org/" target="_blank" rel="noopener">Velocity.js</a></li>
       <li><a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap 4</a></li>
-      <li><a href="https://wordpress.org/" target="_blank" rel="noopener">WordPress &amp; Custom themes</a></li>
+      <li><a href="https://wordpress.org/" target="_blank" rel="noopener">WordPress</a> &amp; <a href="https://developer.wordpress.org/themes/" target="_blank" rel="noopener">custom themes</a></li>
       <li><a href="https://secure.php.net/" target="_blank" rel="noopener">PHP</a></li>
       <li><a href="https://www.mysql.com/" target="_blank" rel="noopener">SQL</a></li>
-      <li><a href="https://laravel.com/" target="_blank" rel="noopener">Laravel</a></li>
+      <li><a href="https://www.kentico.com/" target="_blank" rel="noopener">Kentico CMS</a></li>
       <li><a href="http://rubyonrails.org/" target="_blank" rel="noopener">Ruby on Rails</a></li>
       <li><a href="http://www.adobe.com/marketing-cloud/experience-manager.html" target="_blank" rel="noopener">Adobe Experience Manager</a></li>
-      <li><a href="https://www.kentico.com/" target="_blank" rel="noopener">Kentico CMS</a></li>
-      <li><a href="http://www.adobe.com/products/coldfusion-standard.html" target="_blank" rel="noopener">Adobe ColdFusion</a></li>
-      <li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git &amp; GitHub</a></li>
+      <li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> &amp; <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
       <li><a href="https://www.visualstudio.com/tfs/" target="_blank" rel="noopener">TFS &amp; Azure DevOps</a></li>
       <li>HTML email</li>
-      <li>Display ads</li>
       <li>Landing pages</li>
-      <li><a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">Google Analytics</a> &amp; <a href="https://marketingplatform.google.com/about/tag-manager/" target="_blank" rel="noopener">Tag Manager</a></li>
+      <li><a href="https://marketingplatform.google.com/about/tag-manager/" target="_blank" rel="noopener">Google Tag Manager</a> &amp; Analytics</li>
       <li><a href="https://www.adobe.com/products/catalog.html" target="_blank" rel="noopener">Adobe Photoshop, Illustrator, InDesign, XD</a></li>
       <li><a href="https://www.figma.com/" target="_blank" rel="noopener">Figma</a></li>
     </ul>
@@ -390,14 +362,9 @@
 
   <footer class="cta js-lazyload-bg" data-bg-image="ocean.jpg">
     <div class="cta-content">
-      <p>Clean, effective websites.</p>
+      <p>High-performance websites.<br> Thoughtfully built. Easy to maintain.</p>
       <a href="#contact-me" class="cta-button">Contact Me</a>
     </div>
   </footer>
-
-
-  <script defer src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script defer src="js/all.min.js"></script>
-
 </body>
 </html>

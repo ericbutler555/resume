@@ -22,6 +22,7 @@
 } // work
 
 .site {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   padding: 0 30px;
@@ -38,9 +39,36 @@
     transition: all 0.3s;
   }
 
-  & > img:hover {
-    filter: grayscale(0.5) blur(2px);
-    cursor: not-allowed;
+  &.inactive {
+
+    &:after {
+      content: "No longer online 😢";
+      opacity: 0;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      padding: 10px 15px;
+      border-radius: 4px;
+      background: rgba(white, 0.8);
+      box-shadow: 0 0 6px rgba(black, 0.4);
+      font-size: 13px;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      cursor: not-allowed;
+
+      img {
+        filter: grayscale(0.5) blur(2px);
+      }
+
+      &:after {
+        opacity: 1;
+        top: 40%;
+      }
+    }
   }
 
   a {

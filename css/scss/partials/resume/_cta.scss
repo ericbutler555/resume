@@ -11,10 +11,10 @@
   text-align: center;
   padding: 100px 15px;
   color: white;
-  @include rgbaFallback(background, $deepBlue, 0.8);
+  background: rgba($deepBlue, 0.8);
 
   p {
-    font: 24px/1.2 $trocchi;
+    font: 24px/1.4 $trocchi;
     margin-bottom: 1.5em;
   }
 } // cta-content

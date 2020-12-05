@@ -35,14 +35,7 @@ function prepJS() {
     .pipe(gulp.dest('js/'));
 }
 
-// watch for changes:
-
-function watchFiles() {
-  gulp.watch('css/scss/**/*.scss', ['prepCSS']);
-  gulp.watch('js/partials/**/*.js', ['prepJS']);
-}
-
 // cli calls:
 
-exports.default = watchFiles;
+exports.default = prepCSS;
 exports.build = parallel(prepCSS, prepJS);
