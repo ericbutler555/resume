@@ -51,7 +51,7 @@
       z-index: 2;
       padding: 10px 15px;
       border-radius: 4px;
-      background: rgba(white, 0.8);
+      background: white;
       box-shadow: 0 0 6px rgba(black, 0.4);
       font-size: 13px;
       transition: all 0.3s;
@@ -59,10 +59,6 @@
 
     &:hover {
       cursor: not-allowed;
-
-      img {
-        filter: grayscale(0.5) blur(2px);
-      }
 
       &:after {
         opacity: 1;
